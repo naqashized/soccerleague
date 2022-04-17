@@ -1,6 +1,6 @@
 package com.soccerleague.model;
 
-import com.fasterxml.jackson.annotation.JsonSetter;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,6 +15,6 @@ import java.util.List;
 public class League {
     private String league;
     private String country;
-    @JsonSetter("teams")
+    @JsonProperty("teams")
     private List<Team> teams;
 }
